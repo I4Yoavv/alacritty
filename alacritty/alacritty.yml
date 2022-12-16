@@ -1,0 +1,100 @@
+# 自动刷新
+live_config_reload: true
+# Tab 缩进
+# tabspaces: 4
+
+shell:
+  program: /bin/zsh
+  # windows
+  # program: c:\windows\system32\windowspowershell\v1.0\powershell.exe
+  args:
+    # login
+    - -l
+
+font:
+  # The normal (roman) font face to use.
+  normal:
+    family: Noto Sans Mono
+    # Style can be specified to pick a specific face.
+    #style: Regular
+
+  # The bold font face
+  bold:
+    family: Noto Sans Mono
+  #   # Style can be specified to pick a specific face.
+  #style: Bold
+
+  # The italic font face
+  #italic:
+  #   family: Noto Sans Mono
+  #   # Style can be specified to pick a specific face.
+  #style: Italic
+
+  size: 9.0
+
+  ligatures: true
+
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+
+window:
+  # 窗口大小
+  dimensions:
+    columns: 115
+    lines: 26
+
+  # 边缘空白
+  padding:
+    x: 2
+    y: 2
+  dynamic_padding: false
+  startup_mode: Windowed
+  # 窗口修饰
+  # - full: 有边界 + 标题栏
+  # - none: 无边界 + 标题栏
+  decorations: full
+  opacity: 0.9
+
+scrolling:
+  # 历史保留行数
+  history: 2000
+
+  # 每次滚动行数
+  multiplier: 20
+
+  # 每次滚动行数（分屏时）
+  faux_multiplier: 100
+
+  # 自动滚动至最新行
+  auto_scroll: true
+colors:
+  # COLORSCHEME: horizon-dark.yaml
+  primary:
+    background: '0x1c1e26'
+    foreground: '0xe0e0e0'
+
+  # Normal colors
+  normal:
+    black: '0x16161c'
+    red: '0xe95678'
+    green: '0x29d398'
+    yellow: '0xfab795'
+    blue: '0x26bbd9'
+    magenta: '0xee64ac'
+    cyan: '0x59e1e3'
+    white: '0xd5d8da'
+
+  # Bright colors
+  bright:
+    black: '0x5b5858'
+    red: '0xec6a88'
+    green: '0x3fdaa4'
+    yellow: '0xfbc3a7'
+    blue: '0x3fc4de'
+    magenta: '0xf075b5'
+    cyan: '0x6be4e6'
+    white: '0xd5d8da'
